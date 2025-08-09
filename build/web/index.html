@@ -8,12 +8,6 @@
     The path provided below has to start and end with a slash "/" in order for
     it to work correctly.
 
-PS C:\HanhTrinhMoi\MBNC\MobileNC> flutter build web --release --web-renderer canvaskit
-Could not find an option named "--web-renderer".
-
-
-Run 'flutter -h' (or 'flutter <command> -h') for available flutter commands and options.
-PS C:\HanhTrinhMoi\MBNC\MobileNC> 
     For more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
@@ -37,24 +31,8 @@ PS C:\HanhTrinhMoi\MBNC\MobileNC>
 
   <title>do_an_mobile_nc</title>
   <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "613605535";
-  </script>
-  <!-- This script adds the flutter initialization JS inline -->
-  <script src="flutter.js" defer></script>
 </head>
 <body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        }
-      });
-    });
-  </script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
