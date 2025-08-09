@@ -1,5 +1,5 @@
 {
-  "buildCommand": "export PATH=\"$PATH:/tmp/flutter/bin\" && flutter build web --release --base-href /",
+  "buildCommand": "export PATH=\"$PATH:/tmp/flutter/bin\" && flutter build web --release --web-renderer html --base-href /",
   "outputDirectory": "build/web",
   "installCommand": "cd /tmp && git clone https://github.com/flutter/flutter.git -b stable --depth 1 && export PATH=\"$PATH:/tmp/flutter/bin\" && flutter config --enable-web && cd /vercel/path0 && flutter pub get",
   "framework": null,
