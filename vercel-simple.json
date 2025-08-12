@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "build/web/**": {
+      "includeFiles": "build/web/**"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

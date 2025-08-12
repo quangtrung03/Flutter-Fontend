@@ -3,7 +3,6 @@
 .packages
 .pub-cache/
 .pub/
-build/
 pubspec.lock
 
 # IDE
@@ -28,3 +27,6 @@ test/
 # Other
 README.md
 analysis_options.yaml
+
+# Keep build/web for deployment
+!build/web/
