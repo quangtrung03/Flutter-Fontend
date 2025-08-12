@@ -1,0 +1,17 @@
+package: do_an_mobile_nc
+name: Flutter Coffee Shop
+description: A Flutter web app for coffee shop
+
+# Build settings for Vercel
+build:
+  env:
+    FLUTTER_WEB: true
+  commands:
+    - flutter config --enable-web
+    - flutter build web --release --base-href=/
+  publish: build/web
+
+# Routes for SPA
+routes:
+  - src: "/.*"
+    dest: "/index.html"

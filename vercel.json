@@ -3,10 +3,36 @@
   "buildCommand": null,
   "outputDirectory": "build/web",
   "installCommand": null,
-  "routes": [
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "headers": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/flutter.js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
+    },
+    {
+      "source": "/flutter_bootstrap.js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
+    },
+    {
+      "source": "/main.dart.js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
     }
   ]
 }

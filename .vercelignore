@@ -1,32 +1,5 @@
-# Flutter
-.dart_tool/
-.packages
-.pub-cache/
-.pub/
-pubspec.lock
-
-# IDE
-.vscode/
-.idea/
-*.iml
-
-# Platform specific
-android/
-ios/
-linux/
-macos/
-windows/
-
-# Git
-.git/
-.gitignore
-
-# Test
-test/
-
-# Other
-README.md
-analysis_options.yaml
-
-# Keep build/web for deployment
+# Keep only build/web
+*
+!build/
 !build/web/
+!build/web/**
